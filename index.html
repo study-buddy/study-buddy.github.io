@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--[if ie]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Sbuddy | Never Study Alone</title>
+    <!-- #CSS Links -->
+	<link href="css/style.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+ 	<style>
+ 		#map { height: 600px; }
+ 	</style>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="scripts/html5shiv.js"></script>
+      <script src="scripts/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <!--
+	TABLE OF CONTENTS.
+	Use search to find needed section.
+	===================================================================
+	|  01. #CSS Links                |  all CSS links and file paths  |
+	|  02. #Body                     |  body tag                      |
+	|  03. #Header                   |  header tag                    |
+	|  04. #Page Content             |  page content                  |
+	|  05. #Page Footer              |  page footer                   |
+	|  06. #Plugins                  |  all scripts and plugins       |
+	===================================================================
+	-->
+
+  <!-- #Body -->
+  <body>
+	<!-- #Header -->
+  	<header>
+		<div class="top-line">&nbsp;</div>
+		<div class="navbg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="navigation-menu">
+							<div class="navbar-wrapper">
+							 	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+								  <div class="navbar-header">
+									  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									  </button>
+									</div>
+									<div class="logo">
+										<h1><a href="#home-link"><span class="txtcolor1">S</span><span class="txtcolor2">b</span><span class="txtcolor3">u</span><span class="txtcolor4">d</span><span class="txtcolor5">d</span><span class="txtcolor1">y</span><br /><span class="logo-txt-top">Never Study Alone</span></a></h1>
+									</div>
+									<div class="navbar-collapse collapse navmenu">
+									  <ul class="nav navbar-nav pull-right ">
+										<li class="first"><a href="#link-1">How it works</a></li>
+										<li><a href="#link-2">Features</a></li>
+										<li><a href="#link-3">Team</a></li>
+										<li><a href="#link-4">Contact</a></li>
+									  </ul>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- #Page Content -->
+	<section>
+		<!-- Carousel section starts here -->
+			<div id="home-link"></div>
+			<div id="myCarousel" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="item active">
+						<div class="container">
+							<img src="images/slider-phone.png" alt="" class="cimage" />
+							<div class="carousel-caption">
+								<div class="carousel-pointer"><img src="images/point_tool.png" alt="" /></div>
+								<div class="slider-hd">Sbuddy</div>
+								<div class="slider-leadin">
+									<span>Easiest way to find people near you trying to learn the same thing</span> Today.
+								</div>
+								<div class="slider-app1">
+									<div class="slider-img"><img src="images/iPhone_icon.png" alt="" /></div>
+									<div class="app1-txt">Available on<br />App Store</div>
+								</div>
+								<div class="smalltxt">available for iPhone &amp; iPad</div>
+								<div class="slider-app2">
+									<div class="slider-img"><img src="images/google_play.png" alt="" /></div>
+									<div class="app1-txt">Coming soon to Google Play</div>
+								</div>
+								<div class="social-icons-slider">
+									<img src="images/FB-icon.png" alt="" />
+									<img src="images/tweet-icon.png" alt="" />
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- // Carousel section ends here -->
+
+		<!-- How it section starts here -->
+		<div id="link-1"></div>
+		<div class="how-hd">
+			<div class="container">
+				<div class="black header-cont contenttxt">
+					<span class="helvetica-light">How it </span>
+					<span class="helvetica-bold"><span class="txtcolor1">w</span><span class="txtcolor2">o</span><span class="txtcolor3">r</span><span class="txtcolor4">k</span><span class="txtcolor5">s</span></span>
+					<div class="helvetica-light bdytxt cust-subhd">Showcase your application process</div>
+				</div>
+			</div>
+		</div>
+		<div class="how-main">
+			<div class="container">
+				<div class="step-container">
+					<div class="step-bg">
+						<div class="stepbox1">
+							<div class="placeholder-bg">
+								<div class="placeholder-230x180">230x180</div>
+							</div>
+							<div class="placeholder-bg box1-split">
+								<div class="placeholder-230x110">230x110</div>
+							</div>
+							<div class="placeholder-bg">
+								<div class="placeholder-230x150">230x150</div>
+							</div>
+						</div>
+						<div class="stepbox2">
+							<div class="stepbox21">
+								<div class="placeholder-bg">
+									<div class="placeholder-230x290">230x290</div>
+								</div>
+							</div>
+							<div class="stepbox22">
+								<div class="placeholder-bg">
+									<div class="placeholder-230x150">230x150</div>
+								</div>
+								<div class="placeholder-bg box1-split">
+									<div class="placeholder-230x110">230x110</div>
+								</div>
+							</div>
+							<div class="stepbox23">
+								<div class="placeholder-bg-1">
+									<div class="placeholder-150x290">150x290</div>
+								</div>
+							</div>
+						</div>
+						<div class="stepbox3">
+							<div class="stepbox31">
+								<div class="placeholder-bg-2">
+									<div class="placeholder-370x180">370x180</div>
+								</div>
+							</div>
+							<div class="stepbox32">
+								<div class="placeholder-bg-3">
+									<div class="placeholder-270x180">270x180</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="layer">
+						<div class="step1">
+							<div class="step1-img"><img src="images/step_01.png" alt="" /></div>
+							<div class="step-txt">
+								One Click<br />Installation<span>STEP - 1</span>
+							</div>
+							<div class="arrow1"><a href="#"><img src="images/arrow.png" alt="" /></a></div>
+						</div>
+						<div class="step2">
+							<div class="step2-img"><img src="images/step_02.png" alt="" /></div>
+							<div class="step-txt step2-txt">
+								Multi<br />color Pro<span>STEP - 2</span>
+							</div>
+							<div class="arrow2"><a href="#"><img src="images/arrow.png" alt="" /></a></div>
+						</div>
+						<div class="step3">
+							<div class="step3-img"><img src="images/step_03.png" alt="" /></div>
+							<div class="step-txt step3-txt">
+								Enjoy<br />Sharing Photos<span>STEP - 3</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- How it section ends here -->
+		<!-- Callout box 2 starts here -->
+		<div class="box2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 calloutbox2 calloutbox2-lft subscribe-arrow">
+						<span class="helvetica-light">Subscribe to our </span><span class="helvetica-bold">Newsletter</span><br /><span class="boxsub-hd pull-left">sign up with your <span>Email</span> get new updates</span>
+					</div>
+					<div class="col-md-5 calloutbox2 calloutbox2-rgt submitinput">
+						<div class="forms">
+							<input type="text" id="submitemail" value="Enter your email" class="submitemail" />
+							<button type="submit" class="btn btn-default">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // Callout box 2 ends here -->
+		<div id="map">
+			<div id="map-navigation" class="map-navigation">
+	        	<a href="#" data-zoom="12" data-position="37.7733,-122.4367">
+	            	San Francisco
+	        	</a>
+	    	</div>
+		</div>
+		<!-- Contact section starts here -->
+		<div id="link-4"></div>
+		<div class="contact-main">
+			<div class="container">
+			</div>
+			<div class="contact-form">
+				<div class="container">
+					<div class="row">
+						<div class="contact-hd">
+							<h2>Sbuddy</h2><span>Never Study Alone</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="form-fields">
+						<form>
+							<div class="col-md-6 control-group">
+								<label class="control-label" for="inputname">Name *</label>
+								<div class="controls">
+									<input type="text" id="inputname">
+								</div>
+							</div>
+							<div class="col-md-6 control-group">
+								<label class="control-label" for="inputemail">Email *</label>
+								<div class="controls">
+									<input type="text" id="inputemail">
+								</div>
+							</div>
+							<div class="col-md-6 control-group">
+								<label class="control-label">Subject *</label>
+								<div class="controls custom-selectbox">
+									<select>
+										<option>Select Subject</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6 control-group">
+								<label class="control-label disabledtxt">Project Budget</label>
+								<div class="controls custom-selectbox-disable" >
+									<select disabled="disabled">
+										<option>Select Budget</option>
+									</select>
+								</div>
+								<div class="budget-txt">Will be Enable once you select <span class="custombd">Custom Project</span> in <span class="custombd">Subject</span> Field</div>
+							</div>
+							<div class="col-md-12 control-group">
+								<label class="control-label">Message *</label>
+								<div class="controls">
+									<textarea rows="3"></textarea>
+								</div>
+							</div>
+							<div class="col-md-12 control-group text-right">
+								<button class="submit-btn" type="submit">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // Contact section ends here -->
+		<!-- Team section starts here -->
+		<div id="link-3"></div>
+		<div class="team-main">
+			<div class="container">
+				<div class="black header-cont contenttxt">
+					<span class="helvetica-light">Team</span>
+				</div>
+			</div>
+		</div>
+		<div class="team-bg">
+			<div class="container">
+				<div class="row">
+					<div class="team-members">
+						<div class="col-md-4">
+							<div class="user1">
+								<div class="overlay">
+									<span class="plus">
+										<a href="#" class="twitter">&nbsp;</a>
+										<a href="#" class="dribble">&nbsp;</a>
+									</span>
+								</div>
+							</div>
+							<ul>
+								<li class="username">
+									<h4 class="black helvetica-bold">Samantha</h4><span class="helvetica-bold designation">Creative Designer / Owner</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-md-4">
+							<div class="user2">
+								<div class="overlay">
+									<span class="plus">
+										<a href="#" class="twitter">&nbsp;</a>
+										<a href="#" class="dribble">&nbsp;</a>
+									</span>
+								</div>
+							</div>
+							<ul>
+								<li class="username">
+									<h4 class="black helvetica-bold">Jason</h4><span class="helvetica-bold designation"><span class="ltext">i</span>OS &amp; Android Developer / Partner</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-md-4">
+							<div class="user3">
+								<div class="overlay">
+									<span class="plus">
+										<a href="#" class="twitter">&nbsp;</a>
+										<a href="#" class="dribble">&nbsp;</a>
+									</span>
+								</div>
+							</div>
+							<ul>
+								<li class="username">
+									<h4 class="black helvetica-bold">Thomas</h4><span class="helvetica-bold designation">Frontend Developer</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // Team section ends here -->
+	</section>
+
+	<!-- #Page Footer -->
+	<footer>
+		<div class="container text-center">
+			<div class="footer-log white">Sbuddy <br /><span class="logo-txt">Never Study Alone</span></div>
+		</div>
+		<div class="social-icons text-center">
+			<img src="images/FB-icon.png" alt="" />
+			<img src="images/tweet-icon.png" alt="" />
+			<img src="images/google-icon.png" alt="" />
+		</div>
+		<div class="copyright text-center">
+			<span>&copy; Sbuddy</span>
+		</div>
+	</footer>
+
+	<!-- #Plugins -->
+	<script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+	<script src="scripts/scroll.js"></script>
+	<script src="scripts/custom.js"></script>
+	<script src="scripts/jcarousel.responsive.js"></script>
+	<script src="scripts/jquery.jcarousel.min.js"></script>
+	<script src="scripts/bootstrap-carousel.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+      var map = L.map('map', {
+      	center: [37.7733,-122.4367],
+      	zoom: 12,
+      	scrollWheelZoom: false
+      });
+// add an OpenStreetMap tile layer
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+document.getElementById('map-navigation').onclick = function(e) {
+    var pos = e.target.getAttribute('data-position');
+    var zoom = e.target.getAttribute('data-zoom');
+    if (pos && zoom) {
+        var loc = pos.split(',');
+        var z = parseInt(zoom);
+        map.setView(loc, z, {animation: true});
+        return false;
+    }
+}
+// add a marker in the given location, attach some popup content to it and open the popup
+L.marker([37.7733,-122.4367]).addTo(map)
+    .bindPopup('HTML @ 4pm');
+    </script>
+  </body>
+</html>
