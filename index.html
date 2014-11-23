@@ -11,7 +11,10 @@
 	<link href="css/style.css" rel="stylesheet">
  	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
  	<style>
- 		#map { height: 600px; }
+ 		#map { height: 600px;
+ 				width: 100%;}
+		.input-group { margin-top: 5px;
+			margin-bottom: 5px;}
  	</style>
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -90,6 +93,7 @@
 								<div class="slider-leadin">
 									<span>Easiest way to find people near you trying to learn the same thing</span> Today.
 								</div>
+
 								<div class="slider-app1">
 									<div class="slider-img"><img src="images/iPhone_icon.png" alt="" /></div>
 									<div class="app1-txt">Available on<br />App Store</div>
@@ -110,7 +114,21 @@
 				</div>
 			</div>
 		<!-- // Carousel section ends here -->
-
+		<div class="box2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 calloutbox2 calloutbox4-lft subscribe-arrow">
+						<span class="helvetica-light">Send me a beta invite</span>
+					</div>
+					<div class="col-md-5 calloutbox2 calloutbox2-rgt submitinput">
+						<div class="forms">
+							<input type="text" id="submitemail1" value="Enter your email" class="submitemail" />
+							<button type="submit" class="btn btn-default js-subsrcibe1">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- How it section starts here -->
 		<div id="link-1"></div>
 		<div class="how-hd">
@@ -118,7 +136,7 @@
 				<div class="black header-cont contenttxt">
 					<span class="helvetica-light">How it </span>
 					<span class="helvetica-bold"><span class="txtcolor1">w</span><span class="txtcolor2">o</span><span class="txtcolor3">r</span><span class="txtcolor4">k</span><span class="txtcolor5">s</span></span>
-					<div class="helvetica-light bdytxt cust-subhd">Showcase your application process</div>
+					<div class="helvetica-light bdytxt cust-subhd">Never Study Alone</div>
 				</div>
 			</div>
 		</div>
@@ -200,88 +218,68 @@
 		<div class="box2">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-7 calloutbox2 calloutbox2-lft subscribe-arrow">
-						<span class="helvetica-light">Subscribe to our </span><span class="helvetica-bold">Newsletter</span><br /><span class="boxsub-hd pull-left">sign up with your <span>Email</span> get new updates</span>
+					<div class="col-md-7 calloutbox2 calloutbox4-lft subscribe-arrow">
+						<span class="helvetica-light">Send me a beta invite for the App</span>
 					</div>
 					<div class="col-md-5 calloutbox2 calloutbox2-rgt submitinput">
 						<div class="forms">
-							<input type="text" id="submitemail" value="Enter your email" class="submitemail" />
-							<button type="submit" class="btn btn-default">Subscribe</button>
+							<input type="text" id="submitemail2" value="Enter your email" class="submitemail" />
+							<button type="submit" class="btn btn-default js-subsrcibe2">Subscribe</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- // Callout box 2 ends here -->
-		<div id="map">
-			<div id="map-navigation" class="map-navigation">
-	        	<a href="#" data-zoom="12" data-position="37.7733,-122.4367">
-	            	San Francisco
-	        	</a>
-	    	</div>
-		</div>
-		<!-- Contact section starts here -->
-		<div id="link-4"></div>
-		<div class="contact-main">
-			<div class="container">
-			</div>
-			<div class="contact-form">
-				<div class="container">
-					<div class="row">
-						<div class="contact-hd">
-							<h2>Sbuddy</h2><span>Never Study Alone</span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+				    <div class="input-group">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				      <label type="text" class="form-control">HTML</label>
+						<div class="sliderbox">
+							<div class ="label"> Safety </div>
+							<input id="slider_crime" data-slider-tooltip="hide" value=1 data-slider-value=1>
 						</div>
-					</div>
+				    </div><!-- /input-group -->
+				    <div class="input-group">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				      <label type="text" class="form-control">CSS</label>
+				    </div><!-- /input-group -->
+				    <div class="input-group">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				      <label type="text" class="form-control">Bootstrap CSS</label>
+				    </div><!-- /input-group -->
+				    <div class="input-group">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				      <label type="text" class="form-control">Javascript</label>
+				    </div><!-- /input-group -->
+				    <div class="input-group">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				      <label type="text" class="form-control">D3.JS</label>
+				    </div><!-- /input-group -->
+				    <div class="input-group">
+				      <span class="input-group-addon">
+				        <input type="checkbox">
+				      </span>
+				      <label type="text" class="form-control">Angular JS</label>
+				    </div><!-- /input-group -->
 				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="form-fields">
-						<form>
-							<div class="col-md-6 control-group">
-								<label class="control-label" for="inputname">Name *</label>
-								<div class="controls">
-									<input type="text" id="inputname">
-								</div>
-							</div>
-							<div class="col-md-6 control-group">
-								<label class="control-label" for="inputemail">Email *</label>
-								<div class="controls">
-									<input type="text" id="inputemail">
-								</div>
-							</div>
-							<div class="col-md-6 control-group">
-								<label class="control-label">Subject *</label>
-								<div class="controls custom-selectbox">
-									<select>
-										<option>Select Subject</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-6 control-group">
-								<label class="control-label disabledtxt">Project Budget</label>
-								<div class="controls custom-selectbox-disable" >
-									<select disabled="disabled">
-										<option>Select Budget</option>
-									</select>
-								</div>
-								<div class="budget-txt">Will be Enable once you select <span class="custombd">Custom Project</span> in <span class="custombd">Subject</span> Field</div>
-							</div>
-							<div class="col-md-12 control-group">
-								<label class="control-label">Message *</label>
-								<div class="controls">
-									<textarea rows="3"></textarea>
-								</div>
-							</div>
-							<div class="col-md-12 control-group text-right">
-								<button class="submit-btn" type="submit">Submit</button>
-							</div>
-						</form>
-					</div>
+				<div class="col-md-10">
+					<div id="map"></div>
 				</div>
 			</div>
 		</div>
-		<!-- // Contact section ends here -->
 		<!-- Team section starts here -->
 		<div id="link-3"></div>
 		<div class="team-main">
@@ -389,6 +387,8 @@
 	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
+
+
 document.getElementById('map-navigation').onclick = function(e) {
     var pos = e.target.getAttribute('data-position');
     var zoom = e.target.getAttribute('data-zoom');

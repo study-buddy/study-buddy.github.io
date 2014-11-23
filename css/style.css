@@ -74,8 +74,8 @@ background: linear-gradient(to right,  #316cba 0%,#3091bb 32%,#30b886 72%,#2f54a
 .carousel-caption img{height:auto}
 .carousel-control.right img{height:auto; margin-left: 60%; text-align: right; top: 50%;}
 .carousel-control.left img{height:auto; margin-left: 8%; text-align: right; top: 50%;}
-	
-.carousel-pointer{width:252px; height:102px; position:absolute; left:-26%; top:12%}	
+
+.carousel-pointer{width:252px; height:102px; position:absolute; left:-26%; top:12%}
 .slider-hd{font-family:dancing; font-size:120px; background: url("../images/divide-line.png") no-repeat 100px 144px}
 .slider-leadin{font-family:helvetica-bold; font-size:22px; text-transform:uppercase; background: url("../images/diveder-line.png") no-repeat bottom center; padding-bottom:10px;}
 .slider-leadin span{font-family:helvetica-light; text-transform:lowercase}
@@ -457,6 +457,7 @@ cite{font-size:14px; color:#000;}
 
 .calloutbox2{background:#0065bd url("../images/newsletter-arrow.png") no-repeat scroll 100% 60%; border-top:1px solid #83d4d0; min-height:120px;}
 .calloutbox2-lft, .calloutbox3-lft{padding-top:30px; font-size:25px; text-transform:uppercase; color:#FFF;}
+.calloutbox4-lft {padding-top:30px; font-size:30px; color:#FFF;}
 .boxsub-hd{font-size:12px;}
 .boxsub-hd span{font-weight:bold}
 .calloutbox2-rgt{background:#0065bd url("../images/mail_bg.png") no-repeat top right;}
@@ -503,7 +504,7 @@ cite{font-size:14px; color:#000;}
 	.nav > li{text-align:center}
 	.cimage, .carousel-pointer{display:none}
 	.carousel{padding-top:0;}
-	.carousel-caption{left:0; margin-top:0; padding:0; position:static;} 
+	.carousel-caption{left:0; margin-top:0; padding:0; position:static;}
 	.slider-hd{font-size:110px}
 	.slider-app1{left:16%}
 	.smalltxt{margin-left: 22%; margin-top: 32%;}
@@ -539,7 +540,7 @@ cite{font-size:14px; color:#000;}
 	.calloutbox2-rgt{padding-top:20px}
 	.calloutbox2-rgt .forms{margin-top:10px;}
 	.calloutbox2-rgt  .forms input{width:61%}
-	
+
 	.how-cont, .app-cont{font-size:50px;}
 	.trybox1{width:100%;}
 	.trybox-hd{width:57%}
@@ -572,7 +573,7 @@ cite{font-size:14px; color:#000;}
 	.nav > li{text-align:center}
 	.cimage, .carousel-pointer{display:none}
 	.carousel{padding-top:0;}
-	.carousel-caption{left:0; margin-top:0; padding:0; position:static;} 
+	.carousel-caption{left:0; margin-top:0; padding:0; position:static;}
 	.slider-hd{font-size:120px}
 	.slider-app1{left:28%}
 	.smalltxt{margin-left: 31%; margin-top:20%;}
@@ -620,7 +621,7 @@ cite{font-size:14px; color:#000;}
 	.nav > li{text-align:center}
 	.cimage, .carousel-pointer{display:none}
 	.carousel{padding-top:0;}
-	.carousel-caption{left:0; margin-top:0; padding:0; position:static; margin-left:80px} 
+	.carousel-caption{left:0; margin-top:0; padding:0; position:static; margin-left:80px}
 	.slider-hd{font-size:120px}
 	.slider-app1{left:5%}
 	.smalltxt{margin-left: 7%; margin-top: 15%;}
@@ -665,7 +666,7 @@ cite{font-size:14px; color:#000;}
 	.slider-app2{left:70px;}
 	.cimage, .carousel-pointer{display:none}
 	.carousel{padding-top:0;}
-	.carousel-caption{left:0; margin-top:0; padding:0; position:static; margin-left:100px} 
+	.carousel-caption{left:0; margin-top:0; padding:0; position:static; margin-left:100px}
 	.smalltxt{margin-left: 6%; margin-top: 12%;}
 	.carousel-control.right{right:20px;}
 	.jcarousel li{width:700px !important}
