@@ -1,0 +1,31 @@
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<ion-view title="<a href='#/tab/topics'><img src='img/sbuddy-logo-rect-220x50.png' height='40'></a>">
+  <ion-content class="light-bg">
+    <!-- <h3 class="center padding">Learn something awesome today with a fellow sbuddy.</h3> -->
+
+    <h4 class="center">Find someone to learn {{topic.title}} with.</h1>
+
+    <div id="map-canvas"><img src="http://maps.googleapis.com/maps/api/staticmap?center=San%20Francisco,CA&zoom=11&size=600x200&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284"></div>
+    
+    <div ng-show="!people" ng-cloak class="center">
+      <h3><i class="ion-looping"> </i> Finding people learning {{topic.title}}!</h3>
+    </div>
+
+    <div class="list card" ng-repeat="person in people" ng-click="addFriend(person)">
+
+      <div class="item item-avatar">
+        <img ng-src="{{person.user.picture.thumbnail}}">
+        <h2>{{person.user.name.first|capitalize}} {{person.user.name.last[0]|capitalize}}</h2>
+        <p>0.4 miles from you.</p>
+      </div>
+
+      <div class="item">
+        <p>Experience level: Beginner</p>
+        <p>Rating: <i ng-repeat="i in [1,2,3,4,5]" class="ion-ios7-star energized"> </i>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
