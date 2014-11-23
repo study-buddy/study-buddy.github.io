@@ -425,14 +425,17 @@ cite{font-size:14px; color:#000;}
 .member-link2{float:right}
 .lwtxt{text-transform:lowercase}
 
-.user1{width:196px; height:196px; border:8px solid #dbdbdb;  border-radius:100px; background:url('../images/team_member_01.png') no-repeat; margin:0px auto; margin-bottom:10px;}
-.user2{width:196px; height:196px; border:8px solid #dbdbdb;  border-radius:100px; background:url('../images/team_member_02.png') no-repeat; margin:0px auto; margin-bottom:10px;}
-.user3{width:196px; height:196px; border:8px solid #dbdbdb;  border-radius:100px; background:url('../images/team_member_03.png') no-repeat; margin:0px auto; margin-bottom:10px;}
+.user{border:5px solid #dbdbdb;  border-radius:50px; margin:0px auto; margin-bottom:10px;}
+
+.user1{width:100px; height:100px; border:8px solid #dbdbdb;  border-radius:50px; background:url('../images/team_member_01.png') no-repeat; margin:0px auto; margin-bottom:10px;}
+.user2{width:100px; height:100px; border:8px solid #dbdbdb;  border-radius:100px; background:url('../images/rafiq.jpeg') no-repeat; margin:0px auto; margin-bottom:10px;}
+.user3{width:100px; height:100px; border:8px solid #dbdbdb;  border-radius:100px; background:url('../images/blake.jpg') no-repeat; margin:0px auto; margin-bottom:10px;}
+.user4{width:150px;height: 150px; border:3px solid #dbdbdb;  border-radius:50px; background:url('../images/ramesh_sampath.jpeg') no-repeat; margin:0px auto; margin-bottom:10px;}
 .user1:hover{background:url('../images/team_member_01.png') no-repeat; opacity:0.6; -webkit-transition: opacity .35s ease; -moz-transition: opacity .35s ease; border:8px solid #0068bd;  border-radius:100px; width:196px; height:196px;}
-.user2:hover{background:url('../images/team_member_02.png') no-repeat; opacity:0.6; -webkit-transition: opacity .35s ease; -moz-transition: opacity .35s ease; border:8px solid #0068bd;  border-radius:100px; width:196px; height:196px;}
-.user3:hover{background:url('../images/team_member_03.png') no-repeat; opacity:0.6; -webkit-transition: opacity .35s ease; -moz-transition: opacity .35s ease; border:8px solid #0068bd;  border-radius:100px; width:196px; height:196px;}
-.user1 .plus, .user2 .plus, .user3 .plus{display:none}
-.user1:hover .plus, .user2:hover .plus, .user3:hover .plus{display:block}
+.user2:hover{background:url('../images/rafiq.jpeg') no-repeat; opacity:0.6; -webkit-transition: opacity .35s ease; -moz-transition: opacity .35s ease; border:8px solid #0068bd;  border-radius:100px; width:196px; height:196px;}
+.user3:hover{background:url('../images/ramesh_sampath.png') no-repeat; opacity:0.6; -webkit-transition: opacity .35s ease; -moz-transition: opacity .35s ease; border:8px solid #0068bd;  border-radius:100px; width:196px; height:196px;}
+.user1 .plus, .user2 .plus, .user3 .plus, .user4 .plus{display:none}
+.user1:hover .plus, .user2:hover .plus, .user3:hover .plus, .user4:hover .plus{display:block}
 .plus{margin:35% 0 0 25%; width:60%; float:left}
 .plus a{float:left; margin:0 7% 0 0;}
 .plus a:hover{float:left; margin:0 7% 0 0;}
