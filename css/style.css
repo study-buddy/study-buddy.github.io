@@ -76,9 +76,9 @@ background: linear-gradient(to right,  #316cba 0%,#3091bb 32%,#30b886 72%,#2f54a
 .carousel-control.left img{height:auto; margin-left: 8%; text-align: right; top: 50%;}
 
 .carousel-pointer{width:252px; height:102px; position:absolute; left:-26%; top:12%}
-.slider-hd{font-family:dancing; font-size:120px; background: url("../images/divide-line.png") no-repeat 100px 144px}
-.slider-leadin{font-family:helvetica-bold; font-size:22px; text-transform:uppercase; background: url("../images/diveder-line.png") no-repeat bottom center; padding-bottom:10px;}
-.slider-leadin span{font-family:helvetica-light; text-transform:lowercase}
+.slider-hd{font-family:PoetsenOne-Regular; font-size:120px; background: url("../images/divide-line.png") no-repeat 100px 144px}
+.slider-leadin{font-family:PoetsenOne-Regular; font-size:22px; text-transform:uppercase; background: url("../images/diveder-line.png") no-repeat bottom center; padding-bottom:10px;}
+.slider-leadin span{font-family:PoetsenOne-Regular; text-transform:lowercase}
 .slider-app1{border:1px solid #fefefe; width:200px; text-align:left; padding:14px 20px; margin:20px 0 0 0; position:relative; left:30px; float:left}
 .slider-app1 .slider-img{position:absolute; left:0; width:22px; margin-left:20px;}
 .slider-app1 .app1-txt{font-family:helvetica-bold; font-size:14px; color:#FFF; text-transform:uppercase; background: url("../images/app1-divider.png") no-repeat 22% center; padding-left:48px;}
