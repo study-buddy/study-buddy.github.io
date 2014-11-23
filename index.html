@@ -236,43 +236,39 @@
 				<div class="col-md-2">
 				    <div class="input-group">
 				      <span class="input-group-addon">
-				        <input type="checkbox">
+				        <input class="js-study-filter" type="checkbox" data-marker="study1">
 				      </span>
 				      <label type="text" class="form-control">HTML</label>
-						<div class="sliderbox">
-							<div class ="label"> Safety </div>
-							<input id="slider_crime" data-slider-tooltip="hide" value=1 data-slider-value=1>
-						</div>
 				    </div><!-- /input-group -->
 				    <div class="input-group">
 				      <span class="input-group-addon">
-				        <input type="checkbox">
+				        <input class="js-study-filter" type="checkbox" data-marker="study2">
 				      </span>
 				      <label type="text" class="form-control">CSS</label>
 				    </div><!-- /input-group -->
 				    <div class="input-group">
 				      <span class="input-group-addon">
-				        <input type="checkbox">
+				        <input class="js-study-filter" type="checkbox" data-marker="study3">
 				      </span>
 				      <label type="text" class="form-control">Bootstrap CSS</label>
 				    </div><!-- /input-group -->
 				    <div class="input-group">
 				      <span class="input-group-addon">
-				        <input type="checkbox">
+				        <input class="js-study-filter" type="checkbox" data-marker="study4">
 				      </span>
-				      <label type="text" class="form-control">Javascript</label>
+				      <label type="text" class="form-control">JQuery</label>
 				    </div><!-- /input-group -->
 				    <div class="input-group">
 				      <span class="input-group-addon">
-				        <input type="checkbox">
+				        <input class="js-study-filter" type="checkbox" data-marker="study5" >
 				      </span>
-				      <label type="text" class="form-control">D3.JS</label>
+				      <label type="text" class="form-control">Coursera CS 50</label>
 				    </div><!-- /input-group -->
 				    <div class="input-group">
 				      <span class="input-group-addon">
-				        <input type="checkbox">
+				        <input class="js-study-filter" type="checkbox" data-marker="study6">
 				      </span>
-				      <label type="text" class="form-control">Angular JS</label>
+				      <label type="text" class="form-control">Udacity CS 101</label>
 				    </div><!-- /input-group -->
 				</div>
 				<div class="col-md-10">
@@ -378,30 +374,121 @@
           $('#myCarousel').carousel()
         })
       }(window.jQuery)
-      var map = L.map('map', {
-      	center: [37.7733,-122.4367],
-      	zoom: 12,
-      	scrollWheelZoom: false
-      });
-// add an OpenStreetMap tile layer
-	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-	    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);
+
+      var map;
+      var popup;
+      var markers = {};
+      var marker_data;
+
+    	function get_data() {
+			var marker_locs = {
+				study1: [
+					{loc: [37.7733,-122.4367], popup_msg: 'Starbucks @ 4pm'},
+					{loc: [37.79934, -122.41539], popup_msg: 'Starbucks @ 7pm'}
+				],
+				study2: [
+					{loc: [37.78781, -122.44989], popup_msg: 'Citizen Space @ 5pm'},
+					{loc: [37.76664, -122.40063], popup_msg: 'Starbucks @ 7pm'}
+				],
+				study3: [
+					{loc: [37.76909, -122.44886], popup_msg: 'Library @ Noon'},
+					{loc: [37.76624, -122.43874], popup_msg: 'Starbucks @ 7pm'}
+				],
+				study4: [
+					{loc: [37.78008, -122.44234], popup_msg: 'Hangouts @ 7pm'},
+					{loc: [37.77886, -122.46345], popup_msg: 'Coffee house @ 7pm'}
+				],
+				study5: [
+					{loc: [37.76976, -122.39307], popup_msg: 'Library @ 4pm'},
+					{loc: [37.79975, -122.40217], popup_msg: 'Skype @ 7pm'},
+					{loc: [37.76054, -122.40921], popup_msg: 'Starbucks @ 5pm'}
+				],
+				study6: [
+					{loc: [37.77533, -122.46895], popup_msg: 'Co-work @ 4pm'},
+					{loc: [37.75918, -122.43273], popup_msg: 'Hangouts @ 7pm'}
+				]
+			};
+			return marker_locs;
+    	}
+
+      function init() {
+         map = new L.Map('map', {
+	      	zoom: 12,
+	      	scrollWheelZoom: false
+      	});
+        popup = new L.Popup();
+        var sf = new L.LatLng(37.7733,-122.4367);
+        map.setView(sf, 13);
 
 
-document.getElementById('map-navigation').onclick = function(e) {
-    var pos = e.target.getAttribute('data-position');
-    var zoom = e.target.getAttribute('data-zoom');
-    if (pos && zoom) {
-        var loc = pos.split(',');
-        var z = parseInt(zoom);
-        map.setView(loc, z, {animation: true});
-        return false;
-    }
-}
+		// add an OpenStreetMap tile layer
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+		markers.study1 = new L.FeatureGroup();
+		markers.study2 = new L.FeatureGroup();
+		markers.study3 = new L.FeatureGroup();
+		markers.study4 = new L.FeatureGroup();
+		markers.study5 = new L.FeatureGroup();
+		markers.study6 = new L.FeatureGroup();
+
+		// Add markers on the map
+		marker_data = get_data();
+
+		var add_layer_elem = function(data, elem) {
+			console.log(data.loc, data.popup_msg);
+			var marker = L.marker(data.loc);
+			marker.bindPopup(data.popup_msg);
+			console.log(elem);
+			console.log(data);
+			elem.addLayer(marker);
+		};
+
+		marker_data.study1.forEach(function(data) {
+			add_layer_elem(data, markers.study1)
+		});
+
+		marker_data.study2.forEach(function(data) {
+			add_layer_elem(data, markers.study2)
+		});
+
+		marker_data.study3.forEach(function(data) {
+			add_layer_elem(data, markers.study3)
+		});
+
+		marker_data.study4.forEach(function(data) {
+			add_layer_elem(data, markers.study4)
+		});
+
+		marker_data.study5.forEach(function(data) {
+			add_layer_elem(data, markers.study5)
+		});
+
+		marker_data.study6.forEach(function(data) {
+			add_layer_elem(data, markers.study6)
+		});
+
+        map.on('click', onMapClick);
+      }
+      //Listener function taking an event object
+      function onMapClick(e) {
+      	 //map click event object (e) has latlng property which is a location at which the click occured.
+      	 console.log("You clicked the map at " + e.latlng.toString());
+      }
+	var set_markers = function() {
+		var elem = this;
+		var layer_data = $(this).data('marker');
+		if (elem.checked) {
+			map.addLayer(markers[layer_data]);
+		} else {
+			map.removeLayer(markers[layer_data]);
+		}
+	}
 // add a marker in the given location, attach some popup content to it and open the popup
-L.marker([37.7733,-122.4367]).addTo(map)
-    .bindPopup('HTML @ 4pm');
+$(function() {
+	init();
+	$('.js-study-filter').click(set_markers);
+})
     </script>
   </body>
 </html>
