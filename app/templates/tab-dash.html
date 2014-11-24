@@ -1,0 +1,16 @@
+<ion-view title="<a href='#/tab/topics'><img src='img/sbuddy-logo-rect-220x50.png' height='40'></a>">
+  <ion-content class="light-bg">
+    <h3 class="center padding">What do you want to learn today?</h3>
+
+    <a ng-repeat="topic in topics" ng-href="#/tab/map/{{$index}}">
+    <div class="topic-item" back-cover="{{topic.image}}">  
+    	    	
+   		<div class="topic-title">
+   			{{topic.title}}
+    	</div>
+
+    </div>
+    </a>
+
+  </ion-content>
+</ion-view>

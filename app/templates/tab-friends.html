@@ -1,0 +1,9 @@
+<ion-view title="<a href='#/tab/topics'><img src='img/sbuddy-logo-rect-220x50.png' height='40'></a>">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/messager/{{$index}}">
+        {{friend.user.name.first|capitalize}} {{friend.user.name.last|capitalize}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
